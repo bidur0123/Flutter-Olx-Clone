@@ -14,6 +14,12 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text("Ola App"),
       ),
+      drawer: const Drawer(),
+      body: const Column(
+        children: [
+
+        ],
+      ),
     );
   }
 }
