@@ -6,7 +6,6 @@ import 'package:webview_flutter/webview_flutter.dart';
 
 class TAC extends StatefulWidget {
   const TAC({Key? key}) : super(key: key);
-  // final CookieManager? cookieManager;
 
   static const String routeName = '/terms-page';
 
