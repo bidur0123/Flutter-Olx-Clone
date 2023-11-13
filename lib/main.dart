@@ -1,11 +1,7 @@
-// import 'package:firebase_auth/firebase_auth.dart';
-// ignore_for_file: unused_import
 
 import 'package:flutter/material.dart';
 import 'package:olx_clone/routes/home/homepage.dart';
 import 'package:olx_clone/routes/login/loginPage.dart';
-
-// ignore: depend_on_referenced_packages
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 import 'package:flutter/services.dart';
@@ -39,12 +35,6 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
-      // builder: (context, child) {
-      //   return ScrollConfiguration(
-      //     behavior: MyBehavior(),
-      //     child: child,
-      //   );
-      // },
       debugShowCheckedModeBanner: false,
       title: 'Olx clone',
       theme: ThemeData(
@@ -54,12 +44,6 @@ class MyApp extends StatelessWidget {
             // primarySwatch: Colors.white,
             ),
       ),
-      // ThemeData(
-      //   primaryColor: Colors.white,
-      //   textTheme: TextTheme(
-      //     headline1: (TextStyle(backgroundColor: Colors.green))
-      //   ),
-      // ),
       home: (const LoginPage()),
     );
   }
