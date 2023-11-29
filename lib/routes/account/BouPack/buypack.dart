@@ -2,7 +2,7 @@ import 'dart:ui';
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:ola_clone/routes/home/categories.dart';
+import 'package:olx_clone/routes/home/categories.dart';
 
 class BuyPackages extends StatefulWidget {
   const BuyPackages({super.key});

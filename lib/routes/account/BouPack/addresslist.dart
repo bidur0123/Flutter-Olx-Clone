@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ola_clone/routes/account/BouPack/addressinfo.dart';
+import 'package:olx_clone/routes/account/BouPack/addressinfo.dart';
 
 class AdressList extends StatefulWidget {
   const AdressList({super.key});
@@ -18,10 +18,10 @@ class _AdressListState extends State<AdressList> {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: const Icon(Icons.arrow_back_ios_new_rounded,
+          icon: Icon(Icons.arrow_back_ios_new_rounded,
               size: 20, color: Color.fromRGBO(12, 56, 61, 1.0)),
         ),
-        title: const Text(
+        title: Text(
           "Addresses List",
           style: TextStyle(
               color: Color.fromRGBO(12, 56, 61, 1.0),
@@ -36,17 +36,17 @@ class _AdressListState extends State<AdressList> {
                                     MaterialPageRoute(
                                         builder: (context) => AddressInfo()));
             },
-            icon: const Icon(
+            icon: Icon(
               Icons.add,
               color: Color.fromRGBO(12, 56, 61, 1.0),
             ),
           )
         ],
         elevation: 0,
-        backgroundColor: const Color.fromRGBO(250, 250, 250, 1),
+        backgroundColor: Color.fromRGBO(250, 250, 250, 1),
       ),
       backgroundColor: Colors.white,
-      body: const Column(
+      body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(

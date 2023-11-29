@@ -1,9 +1,10 @@
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:ola_clone/commons/actionbutton.dart';
-import 'package:ola_clone/commons/bottomnavbar.dart';
-import 'package:ola_clone/routes/account/settings.dart';
-import 'package:ola_clone/routes/login/loginPage.dart';
+import 'package:olx_clone/commons/actionbutton.dart';
+import 'package:olx_clone/commons/bottomnavbar.dart';
+import 'package:olx_clone/routes/account/buy.dart';
+import 'package:olx_clone/routes/account/settings.dart';
+import 'package:olx_clone/routes/login/loginPage.dart';
 
 class AccountPage extends StatefulWidget {
   const AccountPage({super.key});

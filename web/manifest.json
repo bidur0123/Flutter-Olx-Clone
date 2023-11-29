@@ -1,6 +1,6 @@
 {
-    "name": "ola_clone",
-    "short_name": "ola_clone",
+    "name": "olx_clone",
+    "short_name": "olx_clone",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

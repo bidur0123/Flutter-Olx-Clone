@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:ola_clone/routes/sell/sell.dart';
+import 'package:olx_clone/routes/sell/sell.dart';
 import 'package:outline_gradient_button/outline_gradient_button.dart';
 
 class FloatingActionBtn extends StatefulWidget {
