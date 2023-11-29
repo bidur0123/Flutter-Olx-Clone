@@ -3,8 +3,7 @@
 import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:carousel_slider/carousel_slider.dart';
-import 'package:olx_clone/routes/addDetails/slider.dart';
+import 'package:ola_clone/routes/addDetails/slider.dart';
 
 class AddDetails extends StatefulWidget {
   const AddDetails({

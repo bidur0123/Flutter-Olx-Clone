@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:olx_clone/commons/actionbutton.dart';
-import 'package:olx_clone/commons/bottomnavbar.dart';
-import 'package:olx_clone/routes/chats/all.dart';
-import 'package:olx_clone/routes/chats/buying.dart';
-import 'package:olx_clone/routes/chats/selling.dart';
+import 'package:ola_clone/commons/actionbutton.dart';
+import 'package:ola_clone/commons/bottomnavbar.dart';
+import 'package:ola_clone/routes/chats/all.dart';
+import 'package:ola_clone/routes/chats/buying.dart';
+import 'package:ola_clone/routes/chats/selling.dart';
 
 class Chats extends StatefulWidget {
   const Chats({super.key});

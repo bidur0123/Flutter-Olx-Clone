@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:olx_clone/commons/account_rows.dart';
-import 'package:olx_clone/routes/account/BouPack/buypack.dart';
-import 'package:olx_clone/routes/account/BouPack/addresslist.dart';
-import 'package:olx_clone/routes/account/BouPack/billinfo.dart';
-import 'package:olx_clone/routes/account/BouPack/delivord.dart';
-import 'package:olx_clone/routes/account/BouPack/myorders.dart';
+import 'package:ola_clone/commons/account_rows.dart';
+import 'package:ola_clone/routes/account/BouPack/addresslist.dart';
+import 'package:ola_clone/routes/account/BouPack/billinfo.dart';
+import 'package:ola_clone/routes/account/BouPack/buypack.dart';
+import 'package:ola_clone/routes/account/BouPack/delivord.dart';
+import 'package:ola_clone/routes/account/BouPack/myorders.dart';
 
 class Buy extends StatefulWidget {
   const Buy({super.key});

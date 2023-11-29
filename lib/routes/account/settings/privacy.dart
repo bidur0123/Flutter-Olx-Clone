@@ -1,8 +1,8 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
-import 'package:olx_clone/commons/account_rows.dart';
-import 'package:olx_clone/routes/account/settings/privacy/createpass.dart';
+import 'package:ola_clone/commons/account_rows.dart';
+import 'package:ola_clone/routes/account/settings/privacy/createpass.dart';
 
 
 class Privacy extends StatefulWidget {

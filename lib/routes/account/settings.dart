@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:olx_clone/commons/account_rows.dart';
-import 'package:olx_clone/routes/account/settings/Privacy.dart';
-import 'package:olx_clone/routes/account/settings/notifications.dart';
+import 'package:ola_clone/commons/account_rows.dart';
+import 'package:ola_clone/routes/account/settings/notifications.dart';
+import 'package:ola_clone/routes/account/settings/privacy.dart';
+
 
 class Settings extends StatefulWidget {
   const Settings({super.key});

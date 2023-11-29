@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_switch/flutter_switch.dart';
-import 'package:olx_clone/commons/account_rows.dart';
 
 import 'privacy/createpass.dart';
 

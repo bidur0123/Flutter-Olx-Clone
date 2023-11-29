@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:olx_clone/routes/account/myOrders/active.dart';
-import 'package:olx_clone/routes/account/myOrders/expired.dart';
-import 'package:olx_clone/routes/account/myOrders/scheduled.dart';
+import 'package:ola_clone/routes/account/myOrders/active.dart';
+import 'package:ola_clone/routes/account/myOrders/expired.dart';
+import 'package:ola_clone/routes/account/myOrders/scheduled.dart';
 
 class MyOrders extends StatefulWidget {
   const MyOrders({super.key});
