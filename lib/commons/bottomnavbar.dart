@@ -1,12 +1,9 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:olx_clone/routes/My%20Ads/myads.dart';
-import 'package:olx_clone/routes/account/account.dart';
-import 'package:olx_clone/routes/chats/chats.dart';
-import 'package:olx_clone/routes/home/filters.dart';
-import 'package:olx_clone/routes/home/homepage.dart';
-import 'package:olx_clone/routes/home/location_selector.dart';
-import 'package:olx_clone/routes/login/loginPage.dart';
+import 'package:ola_clone/routes/My%20Ads/myads.dart';
+import 'package:ola_clone/routes/account/account.dart';
+import 'package:ola_clone/routes/chats/chats.dart';
+import 'package:ola_clone/routes/home/homepage.dart';
 
 class BottomNavigation extends StatefulWidget {
 

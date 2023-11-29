@@ -2,7 +2,7 @@
 
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:olx_clone/routes/sell/details.dart';
+import 'package:ola_clone/routes/sell/details.dart';
 
 class CataTxt extends StatelessWidget {
   const CataTxt({
