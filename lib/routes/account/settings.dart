@@ -20,10 +20,10 @@ class _SettingsState extends State<Settings> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: Icon(Icons.arrow_back_ios_new_rounded,
+              icon: const Icon(Icons.arrow_back_ios_new_rounded,
                   size: 20, color: Color.fromRGBO(12, 56, 61, 1.0)),
             ),
-            title: Text(
+            title: const Text(
               "Settings",
               style: TextStyle(
                   color: Color.fromRGBO(12, 56, 61, 1.0),
@@ -31,13 +31,13 @@ class _SettingsState extends State<Settings> {
                   fontWeight: FontWeight.bold),
             ),
             elevation: 0,
-            backgroundColor: Color.fromRGBO(250, 250, 250, 1)),
+            backgroundColor: const Color.fromRGBO(250, 250, 250, 1)),
         backgroundColor: Colors.white,
         body: Column(children: [
           AccountRows(
               ontap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Privacy()));
+                    MaterialPageRoute(builder: (context) => const Privacy()));
               },
               heading: "Privacy",
               sub_heading:
@@ -45,7 +45,7 @@ class _SettingsState extends State<Settings> {
           AccountRows(
               ontap: () {
                 Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => Notifications()));
+                    MaterialPageRoute(builder: (context) => const Notifications()));
               },
 
               heading: "Notifications",
