@@ -5,7 +5,6 @@ class SignUpButton extends StatelessWidget {
   final String imageUrl;
   final String text;
   final VoidCallback onTap;
-  // final IconData iconurl;
   const SignUpButton(
       {Key? key,
       required this.imageUrl,

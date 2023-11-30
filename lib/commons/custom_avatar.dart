@@ -8,7 +8,7 @@ class CategoriesCircleAvatar extends StatefulWidget {
   final Color bgcolor;
   final double marginleft;
   final double margintop;
-  // final IconData iconurl;
+
   const CategoriesCircleAvatar(
       {Key? key,
       required this.icon,
