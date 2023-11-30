@@ -1,45 +1,5 @@
 import 'package:flutter/material.dart';
 
-// class CustomRadioBtn extends StatefulWidget {
-//   final String text;
-//   final int index;
-//   const CustomRadioBtn({super.key, required this.index, required this.text});
-
-//   @override
-//   State<CustomRadioBtn> createState() => _CustomRadioBtnState();
-// }
-
-// class _CustomRadioBtnState extends State<CustomRadioBtn> {
-//   int value = 0;
-//   @override
-//   Widget build(BuildContext context) {
-//     return OutlinedButton(
-//       onPressed: () {
-//         setState(() {
-//           if (value == 0) {
-//             value = widget.index;
-//           } else if (value == widget.index) {
-//             value = 0;
-//           }
-//         });
-//       },
-//       child: Container(
-//         decoration: BoxDecoration(
-// // shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
-//             // borderSide:
-//             // BorderSide(color: (value == index) ? Colors.green : Colors.black),
-//             ),
-//         child: Text(
-//           widget.text,
-//           style: TextStyle(
-//             color: (value == widget.index) ? Colors.green : Colors.black,
-//           ),
-//         ),
-//       ),
-//     );
-//   }
-// }
-
 class MyRadioListTile<T> extends StatelessWidget {
   final T value;
   final T groupValue;
