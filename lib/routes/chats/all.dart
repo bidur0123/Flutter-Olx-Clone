@@ -17,18 +17,18 @@ class _AllState extends State<All> {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: 
         [
-          Image(image: AssetImage("assets/images/message_icon.png"), width: 150,),
-          SizedBox(height: 15,),
-          Text("No messages yet?", style: TextStyle(
+          const Image(image: AssetImage("assets/images/message_icon.png"), width: 150,),
+          const SizedBox(height: 15,),
+          const Text("No messages yet?", style: TextStyle(
                   fontSize: 20,
                   fontWeight: FontWeight.w800,
                   color: Color.fromRGBO(5, 51, 56, 1)),),
-                  SizedBox(height: 15,),
-                  Text("Find something you like and start a conversation!",
+                  const SizedBox(height: 15,),
+                  const Text("Find something you like and start a conversation!",
                   style: TextStyle(
                   fontSize: 13,
                   color: Color.fromRGBO(5, 51, 56, 1)),),
-                  SizedBox(height: 15,),
+                  const SizedBox(height: 15,),
                   SizedBox(
                               height: 40,
                               width: MediaQuery.of(context).size.width * 0.93,
