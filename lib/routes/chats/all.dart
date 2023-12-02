@@ -27,7 +27,6 @@ class _AllState extends State<All> {
                   Text("Find something you like and start a conversation!",
                   style: TextStyle(
                   fontSize: 13,
-                  // fontWeight: FontWeight.w800,
                   color: Color.fromRGBO(5, 51, 56, 1)),),
                   SizedBox(height: 15,),
                   SizedBox(
