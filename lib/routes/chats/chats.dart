@@ -19,7 +19,7 @@ class _ChatsState extends State<Chats> {
       length: 3,
       child: MaterialApp(
         home: Scaffold(
-                appBar: AppBar(
+          appBar: AppBar(
             // leading: IconButton(
             //   onPressed: (() => Navigator.pop(context)),
             //   icon: const Icon(Icons.close,
@@ -34,25 +34,26 @@ class _ChatsState extends State<Chats> {
                   fontWeight: FontWeight.w800,
                   color: Color.fromRGBO(5, 51, 56, 1)),
             ),
-            bottom: TabBar(
-                labelColor: Color.fromRGBO(12, 56, 61, 1.0),
-                labelStyle: TextStyle(fontWeight: FontWeight.bold),
-                tabs: [
-                  Tab(text: "ALL"),
-                  Tab(
-                    text: "BUYING",
-                  ),
-                  Tab(
-                    text: "SELLING",
-                  )
-                ],
-              ),
+            bottom: const TabBar(
+              labelColor: Color.fromRGBO(12, 56, 61, 1.0),
+              labelStyle: TextStyle(fontWeight: FontWeight.bold),
+              tabs: [
+                Tab(text: "ALL"),
+                Tab(
+                  text: "BUYING",
+                ),
+                Tab(
+                  text: "SELLING",
+                )
+              ],
+            ),
           ),
           backgroundColor: Colors.white,
-          body: TabBarView(children: [All(), buying(), Selling()]),
-          bottomNavigationBar: BottomNavigation(),
-        floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-        floatingActionButton: FloatingActionBtn(),
+          body: const TabBarView(children: [All(), buying(), Selling()]),
+          bottomNavigationBar: const BottomNavigation(),
+          floatingActionButtonLocation:
+              FloatingActionButtonLocation.centerDocked,
+          floatingActionButton: const FloatingActionBtn(),
         ),
       ),
     );
