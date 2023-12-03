@@ -27,10 +27,7 @@ class DefaultFirebaseOptions {
       case TargetPlatform.macOS:
         return macos;
       case TargetPlatform.windows:
-        throw UnsupportedError(
-          'DefaultFirebaseOptions have not been configured for windows - '
-          'you can reconfigure this by running the FlutterFire CLI again.',
-        );
+        return windows;
       case TargetPlatform.linux:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for linux - '
@@ -44,42 +41,46 @@ class DefaultFirebaseOptions {
   }
 
   static const FirebaseOptions web = FirebaseOptions(
-    apiKey: 'AIzaSyC_4SXTC_B8DXb-mwXO1_AG4cDrE8XMzvU',
-    appId: '1:774007259454:web:5db00325dcfc6168c76c6f',
-    messagingSenderId: '774007259454',
-    projectId: 'olx-clone-flutter-f4be8',
-    authDomain: 'olx-clone-flutter-f4be8.firebaseapp.com',
-    storageBucket: 'olx-clone-flutter-f4be8.appspot.com',
-    measurementId: 'G-CK45SQJPND',
+    apiKey: 'AIzaSyD9tgZok_LlpdAPofwiUCj3IxrhoKgEUlk',
+    appId: '1:674536917590:web:d9cac1377c422f51b009f7',
+    messagingSenderId: '674536917590',
+    projectId: 'olx-clone-8d598',
+    authDomain: 'olx-clone-8d598.firebaseapp.com',
+    storageBucket: 'olx-clone-8d598.appspot.com',
   );
 
   static const FirebaseOptions android = FirebaseOptions(
-    apiKey: 'AIzaSyCpG_baxBgjaAdBdGFb7vPGRBuT5L8FqFY',
-    appId: '1:774007259454:android:976aa7c4bb9e51aac76c6f',
-    messagingSenderId: '774007259454',
-    projectId: 'olx-clone-flutter-f4be8',
-    storageBucket: 'olx-clone-flutter-f4be8.appspot.com',
+    apiKey: 'AIzaSyBOiikHQhKJzofbLWNTpILZDVvl1FBQwtQ',
+    appId: '1:674536917590:android:390d7ecc7133b2cbb009f7',
+    messagingSenderId: '674536917590',
+    projectId: 'olx-clone-8d598',
+    storageBucket: 'olx-clone-8d598.appspot.com',
   );
 
   static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyB3LhAVXUqHackltUmrOSQULMaVB4aMugE',
-    appId: '1:774007259454:ios:f268be1260c5b01ec76c6f',
-    messagingSenderId: '774007259454',
-    projectId: 'olx-clone-flutter-f4be8',
-    storageBucket: 'olx-clone-flutter-f4be8.appspot.com',
-    androidClientId: '774007259454-bvdatsoc88ogfjp13b9sjiehmte9b5hr.apps.googleusercontent.com',
-    iosClientId: '774007259454-mf9iedrf6ku86n3d4l4gqb0ag274q8o3.apps.googleusercontent.com',
+    apiKey: 'AIzaSyA6_ZeYc9HBfpBMxNobPazqneL6JnmtXQQ',
+    appId: '1:674536917590:ios:079cd344b16bf06fb009f7',
+    messagingSenderId: '674536917590',
+    projectId: 'olx-clone-8d598',
+    storageBucket: 'olx-clone-8d598.appspot.com',
     iosBundleId: 'com.example.olxClone',
   );
 
   static const FirebaseOptions macos = FirebaseOptions(
-    apiKey: 'AIzaSyB3LhAVXUqHackltUmrOSQULMaVB4aMugE',
-    appId: '1:774007259454:ios:f268be1260c5b01ec76c6f',
-    messagingSenderId: '774007259454',
-    projectId: 'olx-clone-flutter-f4be8',
-    storageBucket: 'olx-clone-flutter-f4be8.appspot.com',
-    androidClientId: '774007259454-bvdatsoc88ogfjp13b9sjiehmte9b5hr.apps.googleusercontent.com',
-    iosClientId: '774007259454-mf9iedrf6ku86n3d4l4gqb0ag274q8o3.apps.googleusercontent.com',
+    apiKey: 'AIzaSyA6_ZeYc9HBfpBMxNobPazqneL6JnmtXQQ',
+    appId: '1:674536917590:ios:079cd344b16bf06fb009f7',
+    messagingSenderId: '674536917590',
+    projectId: 'olx-clone-8d598',
+    storageBucket: 'olx-clone-8d598.appspot.com',
     iosBundleId: 'com.example.olxClone',
+  );
+
+  static const FirebaseOptions windows = FirebaseOptions(
+    apiKey: 'AIzaSyD9tgZok_LlpdAPofwiUCj3IxrhoKgEUlk',
+    appId: '1:674536917590:web:4e80ef979ab03d91b009f7',
+    messagingSenderId: '674536917590',
+    projectId: 'olx-clone-8d598',
+    authDomain: 'olx-clone-8d598.firebaseapp.com',
+    storageBucket: 'olx-clone-8d598.appspot.com',
   );
 }

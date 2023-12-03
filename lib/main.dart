@@ -8,17 +8,20 @@ import 'dart:io';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  if (Platform.isWindows) {
-    Firebase.initializeApp(
-        options: const FirebaseOptions(
-            apiKey: 'AIzaSyCpG_baxBgjaAdBdGFb7vPGRBuT5L8FqFY',
-            appId: '',
-            messagingSenderId: '774007259454	',
-            projectId: 'olx-clone-flutter-f4be8'));
-  } else
-    await Firebase.initializeApp(
-      options: DefaultFirebaseOptions.currentPlatform,
-    );
+  // if (Platform.isWindows) {
+  //   Firebase.initializeApp(
+  //       options: const FirebaseOptions(
+  //           apiKey: 'AIzaSyCpG_baxBgjaAdBdGFb7vPGRBuT5L8FqFY',
+  //           appId: '',
+  //           messagingSenderId: '774007259454	',
+  //           projectId: 'olx-clone-8d598'));
+  // } else
+  //   await Firebase.initializeApp(
+  //     options: DefaultFirebaseOptions.currentPlatform,
+  //   );
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
 
   runApp(const MyApp());
 }
@@ -34,17 +37,10 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
-      // builder: (context, child) {
-      //   return ScrollConfiguration(
-      //     behavior: MyBehavior(),
-      //     child: child,
-      //   );
-      // },
       debugShowCheckedModeBanner: false,
       title: 'Olx clone',
       theme: ThemeData(
         primaryColor: Colors.white,
-        // shadowColor: Colors.white,
         colorScheme: ColorScheme.fromSwatch(
             // primarySwatch: Colors.white,
             ),
