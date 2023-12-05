@@ -39,7 +39,7 @@ class MyRadioListTile<T> extends StatelessWidget {
           ),
         ),
         child: Text(
-          leading.toString().toUpperCase(),          // "s",
+          leading.toString().toUpperCase(),
           style: TextStyle(
             color: isSelected
                 ? const Color.fromRGBO(61, 61, 76, 1.0)

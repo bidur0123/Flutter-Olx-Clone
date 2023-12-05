@@ -56,7 +56,7 @@ class CataTxt extends StatelessWidget {
                   Align(
                     alignment: Alignment.centerRight,
                     child:
-                        showico != false ? Icon(CupertinoIcons.forward) : null,
+                        showico != false ? const Icon(CupertinoIcons.forward) : null,
                   )
                 ],
               ),
