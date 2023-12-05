@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:olx_clone/routes/home/homepage.dart';
 import 'package:olx_clone/routes/login/loginPage.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
@@ -19,9 +18,7 @@ void main() async {
   //   await Firebase.initializeApp(
   //     options: DefaultFirebaseOptions.currentPlatform,
   //   );
-  await Firebase.initializeApp(
-    options: DefaultFirebaseOptions.currentPlatform,
-  );
+  await Firebase.initializeApp();
 
   runApp(const MyApp());
 }
@@ -51,7 +48,6 @@ class MyApp extends StatelessWidget {
       //     headline1: (TextStyle(backgroundColor: Colors.green))
       //   ),
       // ),
-      home: (const LoginPage()),
-    );
+      home: (const LoginPage()));
   }
 }

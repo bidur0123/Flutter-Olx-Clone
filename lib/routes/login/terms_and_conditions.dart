@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:flutter/material.dart';
 import 'package:olx_clone/routes/login/loginPage.dart';
-import 'package:webview_flutter/webview_flutter.dart';
 
 class TAC extends StatefulWidget {
   const TAC({Key? key}) : super(key: key);
@@ -31,12 +30,6 @@ class _TACState extends State<TAC> {
       home: Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
-          // actions: const [Align(
-          //   alignment: Alignment.bottomRight,
-          // child: Icon(
-          //   Icons.close,
-          //   color: Colors.black,
-          //   ))],
           leading: IconButton(
             icon: const Icon(
               Icons.close,
@@ -51,10 +44,7 @@ class _TACState extends State<TAC> {
           ),
           elevation: 0,
         ),
-        // body: const WebView(
-        //   initialUrl: 'https://help.olx.com.pk/hc/en-us',
-        // ),
-        body: Text("terms and Conditions Page"),
+        body: const Text("terms and Conditions Page"),
       ),
     );
   }
