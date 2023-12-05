@@ -8,17 +8,16 @@ void _settingModalBottomSheet(context) {
       context: context,
       builder: (BuildContext bc) {
         return Container(
-          child: new Wrap(
+          child:  Wrap(
             children: <Widget>[
-              new ListTile(
-                  leading: new Icon(Icons.music_note),
-                  title: new Text('Music'),
+               ListTile(
+                  leading:  const Icon(Icons.music_note),
+                  title:  const Text('Music'),
                   onTap: () => {}),
-              new ListTile(
-                leading: new Icon(Icons.videocam),
-                title: new Text('Video'),
+               ListTile(
+                leading:  const Icon(Icons.videocam),
+                title:  const Text('Video'),
                 onTap: () {
-
                 },
               ),
             ],
