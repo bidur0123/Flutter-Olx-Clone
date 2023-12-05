@@ -5,7 +5,6 @@ import 'package:olx_clone/routes/login/loginPage.dart';
 
 class TAC extends StatefulWidget {
   const TAC({Key? key}) : super(key: key);
-  // final CookieManager? cookieManager;
 
   static const String routeName = '/terms-page';
 

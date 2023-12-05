@@ -31,13 +31,13 @@ class _FloatingActionBtnState extends State<FloatingActionBtn> {
         strokeWidth: 4,
         padding: EdgeInsets.zero,
         radius: const Radius.circular(26),
-        child: SizedBox(
+        child: const SizedBox(
           width: 52,
           height: 52,
           child: Column(
             mainAxisSize: MainAxisSize.min,
             mainAxisAlignment: MainAxisAlignment.center,
-            children: const <Widget>[
+            children: <Widget>[
               Icon(
                 Icons.add,
                 size: 30.0,
