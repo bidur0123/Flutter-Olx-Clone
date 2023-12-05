@@ -40,9 +40,6 @@ class _BottomNavigationState extends State<BottomNavigation> {
                           context,
                           MaterialPageRoute(
                               builder: (context) => const HomePage()));
-                      // setState(() {
-                      //   _myPage.jumpToPage(0);
-                      // });
                     },
                   ),
                 ),
@@ -71,9 +68,6 @@ class _BottomNavigationState extends State<BottomNavigation> {
                       onPressed: () {
                         Navigator.push(context,
                             MaterialPageRoute(builder: (context) => const Chats()));
-                        // setState(() {
-                        //   _myPage.jumpToPage(0);
-                        // });
                       },
                     ),
                   ),
@@ -109,9 +103,6 @@ class _BottomNavigationState extends State<BottomNavigation> {
                       color: Color.fromRGBO(0, 47, 52, 1.0),
                     ),
                     onPressed: () {
-                      // setState(() {
-                      //   _myPage.jumpToPage(0);
-                      // });
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => const MyAds()));
                     },
@@ -140,9 +131,6 @@ class _BottomNavigationState extends State<BottomNavigation> {
                         color: Color.fromRGBO(0, 47, 52, 1.0),
                       ),
                       onPressed: () {
-                        // setState(() {
-                        //   _myPage.jumpToPage(0);
-                        // });
                         Navigator.push(
                             context,
                             MaterialPageRoute(
