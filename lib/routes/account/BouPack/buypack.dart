@@ -21,10 +21,10 @@ class _BuyPackagesState extends State<BuyPackages> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: Icon(Icons.arrow_back_ios_new_rounded,
+              icon: const Icon(Icons.arrow_back_ios_new_rounded,
                   size: 20, color: Color.fromRGBO(12, 56, 61, 1.0)),
             ),
-            title: Text(
+            title: const Text(
               "Buy Packages",
               style: TextStyle(
                   color: Color.fromRGBO(12, 56, 61, 1.0),
@@ -32,7 +32,7 @@ class _BuyPackagesState extends State<BuyPackages> {
                   fontWeight: FontWeight.bold),
             ),
             elevation: 0,
-            backgroundColor: Color.fromRGBO(250, 250, 250, 1)),
+            backgroundColor: const Color.fromRGBO(250, 250, 250, 1)),
         backgroundColor: Colors.white,
         body: Column(
           mainAxisAlignment: MainAxisAlignment.start,
@@ -42,14 +42,14 @@ class _BuyPackagesState extends State<BuyPackages> {
               padding: const EdgeInsets.only(left: 15, top: 20),
               child: Text(
                 "select options to show packages".toUpperCase(),
-                style: TextStyle(
+                style: const TextStyle(
                     color: Color.fromRGBO(0, 47, 52, 1.0),
                     fontSize: 18,
                     fontWeight: FontWeight.w800),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(left: 15, top: 20),
+            const Padding(
+              padding: EdgeInsets.only(left: 15, top: 20),
               child: Text("Category",
                   style: TextStyle(
                       color: Color.fromRGBO(0, 47, 52, 1.0),
@@ -67,7 +67,6 @@ class _BuyPackagesState extends State<BuyPackages> {
                       highlightColor: Colors.transparent,
                     ),
                     child: InkWell(
-                      // splashFactory: NoSplash.splashFactory,
                       onTap: () {
                         if (kDebugMode) {
                           print("object");
@@ -80,22 +79,14 @@ class _BuyPackagesState extends State<BuyPackages> {
                       },
                       child: const IgnorePointer(
                         child: TextField(
-                          // style: TextStyle(backgroundColor: Colors.amber),
-                          // readOnly: true,
-                          // expands: true,
-                          // minLines: 2,
-                          // maxLines: 2,
                           textAlignVertical: TextAlignVertical.center,
-                          // controller: loc,
                           decoration: InputDecoration(
                             border: InputBorder.none,
                             fillColor: Color.fromRGBO(235, 238, 239, 1.0),
                             filled: true,
                             contentPadding: EdgeInsets.all(10),
-                            // prefixIcon: Icon(Icons.search),
                             suffixIcon: Icon(Icons.arrow_forward_ios),
                             hoverColor: Colors.amberAccent,
-                            // border:
                             hintStyle: TextStyle(
                                 color: Color.fromRGBO(0, 47, 52, 1.0),
                                 fontWeight: FontWeight.bold),

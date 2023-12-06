@@ -31,18 +31,6 @@ class _AddressInfoState extends State<AddressInfo> {
             backgroundColor: const Color.fromRGBO(250, 250, 250, 1),
           ),
           backgroundColor: Colors.white,
-          // body: Column(
-          //   mainAxisAlignment: MainAxisAlignment.center,
-          //   children: [
-          //     Center(
-          //       child: Image(width: 150,image: AssetImage("assets/images/nothaveloc.png")),
-          //     ),
-          //     SizedBox(height: 10,),
-          //     Center(
-          //       child: Text("You have no address yet", style: TextStyle(color: Color.fromRGBO(12, 56, 61, 1.0), fontWeight: FontWeight.bold),),
-          //     )
-          //   ],
-          // ),
           body: SingleChildScrollView(
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,

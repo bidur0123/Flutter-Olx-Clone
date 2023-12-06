@@ -22,10 +22,10 @@ class _MyOrdersState extends State<MyOrders> {
               onPressed: () {
                 Navigator.pop(context);
               },
-              icon: Icon(Icons.arrow_back_ios_new_rounded,
+              icon: const Icon(Icons.arrow_back_ios_new_rounded,
                   size: 20, color: Color.fromRGBO(12, 56, 61, 1.0)),
             ),
-            title: Text(
+            title: const Text(
               "My Orders",
               style: TextStyle(
                   color: Color.fromRGBO(12, 56, 61, 1.0),
@@ -33,8 +33,8 @@ class _MyOrdersState extends State<MyOrders> {
                   fontWeight: FontWeight.bold),
             ),
             elevation: 0,
-            backgroundColor: Color.fromRGBO(250, 250, 250, 1),
-            bottom: TabBar(
+            backgroundColor: const Color.fromRGBO(250, 250, 250, 1),
+            bottom: const TabBar(
               labelColor: Color.fromRGBO(12, 56, 61, 1.0),
               labelStyle: TextStyle(fontWeight: FontWeight.bold),
               tabs: [
@@ -48,8 +48,8 @@ class _MyOrdersState extends State<MyOrders> {
               ],
             ),
           ),
-          backgroundColor: Color.fromRGBO(235, 238, 239, 1.0),
-          body: TabBarView(children: [Active(), Scheduled(), Expired()]),
+          backgroundColor: const Color.fromRGBO(235, 238, 239, 1.0),
+          body: const TabBarView(children: [Active(), Scheduled(), Expired()]),
         ),
       ),
     );

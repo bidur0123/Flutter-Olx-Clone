@@ -18,10 +18,11 @@ class _AdressListState extends State<AdressList> {
           onPressed: () {
             Navigator.pop(context);
           },
-          icon: Icon(Icons.arrow_back_ios_new_rounded,
-              size: 20, color: Color.fromRGBO(12, 56, 61, 1.0)),
+          icon: const Icon(Icons.arrow_back_ios_new_rounded,
+              size: 20,
+              color: Color.fromRGBO(12, 56, 61, 1.0)),
         ),
-        title: Text(
+        title: const Text(
           "Addresses List",
           style: TextStyle(
               color: Color.fromRGBO(12, 56, 61, 1.0),
@@ -31,30 +32,36 @@ class _AdressListState extends State<AdressList> {
         actions: [
           IconButton(
             onPressed: () {
-              Navigator.push(
-                                    context,
-                                    MaterialPageRoute(
-                                        builder: (context) => AddressInfo()));
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => const AddressInfo()));
             },
-            icon: Icon(
+            icon: const Icon(
               Icons.add,
               color: Color.fromRGBO(12, 56, 61, 1.0),
-            ),
-          )
-        ],
-        elevation: 0,
-        backgroundColor: Color.fromRGBO(250, 250, 250, 1),
-      ),
-      backgroundColor: Colors.white,
-      body: Column(
+                ),
+              )
+            ],
+            elevation: 0,
+            backgroundColor: const Color.fromRGBO(250, 250, 250, 1),
+          ),
+         backgroundColor: Colors.white,
+         body: const Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Center(
-            child: Image(width: 150,image: AssetImage("assets/images/nothaveloc.png")),
+            child: Image(
+                width: 150, image: AssetImage("assets/images/nothaveloc.png")),
           ),
-          SizedBox(height: 10,),
+          SizedBox(
+            height: 10,
+          ),
           Center(
-            child: Text("You have no address yet", style: TextStyle(color: Color.fromRGBO(12, 56, 61, 1.0), fontWeight: FontWeight.bold),),
+            child: Text(
+              "You have no address yet",
+              style: TextStyle(
+                  color: Color.fromRGBO(12, 56, 61, 1.0),
+                  fontWeight: FontWeight.bold),
+            ),
           )
         ],
       ),
