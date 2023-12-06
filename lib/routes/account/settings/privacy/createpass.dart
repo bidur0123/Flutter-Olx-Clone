@@ -17,10 +17,11 @@ class _CreatePassState extends State<CreatePass> {
                   onPressed: () {
                     Navigator.pop(context);
                   },
-                  icon: Icon(Icons.arrow_back_ios_new_rounded,
-                      size: 20, color: Color.fromRGBO(12, 56, 61, 1.0)),
+                  icon: const Icon(Icons.arrow_back_ios_new_rounded,
+                      size: 20,
+                      color: Color.fromRGBO(12, 56, 61, 1.0)),
                 ),
-                title: Text(
+                title: const Text(
                   "Create Password",
                   style: TextStyle(
                       color: Color.fromRGBO(12, 56, 61, 1.0),
@@ -28,55 +29,52 @@ class _CreatePassState extends State<CreatePass> {
                       fontWeight: FontWeight.bold),
                 ),
                 elevation: 0,
-                backgroundColor: Color.fromRGBO(250, 250, 250, 1)),
+                backgroundColor: const Color.fromRGBO(250, 250, 250, 1)),
             backgroundColor: Colors.white,
             body: Column(children: [
               Padding(
-                padding: EdgeInsets.only(left: 15, top: 30),
+                padding: const EdgeInsets.only(left: 15, top: 30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.94,
-                      child: TextField(
+                      child: const TextField(
                         decoration: InputDecoration(
-                            border: OutlineInputBorder(),
-                            // labelText: 'Enter ',
-                            hintText: 'Password'),
+                            border: OutlineInputBorder(), hintText: 'Password'),
                       ),
                     ),
                   ],
                 ),
               ),
               Padding(
-                padding: EdgeInsets.only(left: 15, top: 30),
+                padding: const EdgeInsets.only(left: 15, top: 30),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
                       width: MediaQuery.of(context).size.width * 0.94,
-                      child: TextField(
+                      child: const TextField(
                         decoration: InputDecoration(
                             border: OutlineInputBorder(),
-                            // labelText: 'Enter address',
                             hintText: 'Confirm new Password'),
                       ),
                     ),
                   ],
                 ),
               ),
-              SizedBox(height: 50,),
+              const SizedBox(
+                height: 50,
+              ),
               Row(children: [
-                SizedBox(
+                const SizedBox(
                   width: 17,
                 ),
                 SizedBox(
                     height: 50,
                     width: MediaQuery.of(context).size.width * 0.93,
                     child: ElevatedButton(
-                        onPressed: () {
-                          // loc.text = "";
-                        },
+                        onPressed: () {},
                         style: ButtonStyle(
                             backgroundColor: MaterialStateProperty.all(
                                 const Color.fromRGBO(5, 51, 56, 1))),
