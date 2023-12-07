@@ -15,9 +15,8 @@ class _PrivacyState extends State<Privacy> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-        home: Scaffold(
-         appBar: AppBar(
+    return Scaffold(
+      appBar: AppBar(
           leading: IconButton(
             onPressed: () {
               Navigator.pop(context);
@@ -34,9 +33,9 @@ class _PrivacyState extends State<Privacy> {
           ),
           elevation: 0,
           backgroundColor: const Color.fromRGBO(250, 250, 250, 1)),
-          backgroundColor: Colors.white,
-         body: Column(children: [
-         Column(
+      backgroundColor: Colors.white,
+      body: Column(children: [
+        Column(
           children: [
             InkWell(
               onTap: () {},
@@ -55,7 +54,7 @@ class _PrivacyState extends State<Privacy> {
                             crossAxisAlignment: CrossAxisAlignment.start,
                             children: [
                               Text(
-                                "Show my phone number in ads",
+                                "Show my phone no. in ads",
                                 style: TextStyle(
                                     fontSize: 20,
                                     fontWeight: FontWeight.w600,
@@ -106,9 +105,8 @@ class _PrivacyState extends State<Privacy> {
             },
             heading: "Create Password",
             sub_heading: "")
-        ]
-       ),
-      )
+      ]
+      ),
     );
   }
 }

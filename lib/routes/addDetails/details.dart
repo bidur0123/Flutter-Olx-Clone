@@ -1,9 +1,6 @@
-// ignore_for_file: unnecessary_null_comparison, avoid_print
-
 import 'package:community_material_icon/community_material_icon.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-// import 'package:carousel_slider/carousel_slider.dart';
 import 'package:olx_clone/routes/addDetails/slider.dart';
 
 class AddDetails extends StatefulWidget {
@@ -28,6 +25,7 @@ class AddDetails extends StatefulWidget {
   final String profile_name;
   final List slides;
   final String category;
+
   @override
   State<AddDetails> createState() => _AddDetailsState();
 }
@@ -69,14 +67,14 @@ class _AddDetailsState extends State<AddDetails> {
     "Agriculture Land",
     "Commercial Plots",
     "Files",
-    "Indutrial Land",
+    "Industrial Land",
     "Residential Land",
     "Plot Form"
   ];
   List furnished = ["No OPt", "Unfurnished", "Furnished"];
   List bedrooms = ["No OPt", "1", "2", "3", "4", "5", "6+", "Studio"];
   List bathrooms = ["No OPt", "1", "2", "3", "4", "5", "6", "7+"];
-  List constState = ["No OPt", "Grey Stucture", "Finished"];
+  List constState = ["No OPt", "Grey Structure", "Finished"];
   List floorLevel1 = ["No OPt", "1", "2", "3", "4", "5", "6", "7+" "Ground"];
   List floorLevel2 = ["No OPt", "0", "1", "2", "3", "4", "5", "6", "7+"];
   List propType2 = ["Office", "Shop", "Warehouse", "Factory", "Building"];
@@ -92,26 +90,20 @@ class _AddDetailsState extends State<AddDetails> {
     "6 Year",
     "7 Year"
   ];
+
   @override
   Widget build(BuildContext context) {
     print(widget.price);
     print(widget.des);
     print(widget.details);
     print(widget.imageUrl);
-    // final data = Map[nameof(widget.details.propertyName)];
-    // print(map[nameof(obj.propertyName));
-    // print(widget.details.key);
     return MaterialApp(
       home: Scaffold(
           backgroundColor: const Color.fromRGBO(255, 255, 255, 1.0),
-          // resizeToAvoidBottomInset: false,
           extendBodyBehindAppBar: true,
           appBar: PreferredSize(
               preferredSize: const Size.fromHeight(40),
               child: AppBar(
-
-                  // systemOverlayStyle:  const SystemUiOverlayStyle(
-                  //     statusBarColor: Colors.black,systemNavigationBarColor: Colors.black),
                   elevation: 0,
                   backgroundColor: Colors.transparent,
                   leading: IconButton(
@@ -150,7 +142,6 @@ class _AddDetailsState extends State<AddDetails> {
                     height: MediaQuery.of(context).size.height * 0.28,
                     child: PageView.builder(
                         itemCount: widget.slides.length,
-                        // pageSnapping: true,
                         itemBuilder: (context, pagePosition) {
                           return Column(
                             children: [
@@ -215,8 +206,6 @@ class _AddDetailsState extends State<AddDetails> {
                     color: Color.fromRGBO(235, 238, 239, 1.0),
                     height: 20,
                     thickness: 1.8,
-                    // indent: 10,
-                    // endIndent: 60,
                   ),
                 ),
                 Column(
@@ -234,83 +223,10 @@ class _AddDetailsState extends State<AddDetails> {
                         ),
                       ),
                     ),
-                    // Stack(
-                    //   children: [
-                    //     const Align(
-                    //       alignment: Alignment.bottomLeft,
-                    //       child: Padding(
-                    //         padding: EdgeInsets.only(left: 15.0, top: 13),
-                    //         child: Text(
-                    //           "Condition",
-                    //           style: TextStyle(
-                    //               fontSize: 16.0,
-                    //               color: Color.fro`mRGBO(5, 51, 56, 1),
-                    //               fontWeight: FontWeight.w400),
-                    //         ),
-                    //       ),
-                    //     ),
-                    //     const Align(
-                    //       alignment: Alignment.centerRight,
-                    //       child: Padding(
-                    //         padding: EdgeInsets.only(
-                    //             top: 13, right: 15, bottom: 15),
-                    //         child: Text(
-                    //           "New",
-                    //           style: TextStyle(
-                    //               fontSize: 16.0,
-                    //               color: Color.fromRGBO(89, 117, 115, 1),
-                    //               fontWeight: FontWeight.w400),
-                    //         ),
-                    //       ),
-                    //     ),
-                    //   ],
-                    // ),
-          
-                    // SizedBox(
-                    //   height: 100,
-                    //   child: ListView.builder(
-                    //     itemCount: widget.details.length,
-                    //     itemBuilder: (context, index) {
-                    //       return Stack(
-                    //         children: [
-                    //            Align(
-                    //             alignment: Alignment.bottomLeft,
-                    //             child: Padding(
-                    //               padding: EdgeInsets.only(left: 15.0, top: 0),
-                    //               child: Text(
-                    //                 // "Condition",
-                    //                 widget.details.keys.,
-                    //                 style: const TextStyle(
-                    //                     fontSize: 16.0,
-                    //                     color: Color.fromRGBO(5, 51, 56, 1),
-                    //                     fontWeight: FontWeight.w400),
-                    //               ),
-                    //             ),
-                    //           ),
-                    //           const Align(
-                    //             alignment: Alignment.centerRight,
-                    //             child: Padding(
-                    //               padding: EdgeInsets.only(
-                    //                   top: 0, right: 15, bottom: 15),
-                    //               child: Text(
-                    //                 "New",
-                    //                 style: TextStyle(
-                    //                     fontSize: 16.0,
-                    //                     color: Color.fromRGBO(89, 117, 115, 1),
-                    //                     fontWeight: FontWeight.w400),
-                    //               ),
-                    //             ),
-                    //           ),
-                    //         ],
-                    //       );
-                    //     },
-                    //   ),
-                    // ),
                     Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
                       mainAxisAlignment: MainAxisAlignment.start,
                       children: widget.details.entries.map((e) {
-                        // return Text(e.key);
                         return Stack(
                           children: [
                             e.value == "" || e.value == 0
@@ -344,9 +260,7 @@ class _AddDetailsState extends State<AddDetails> {
                                                         "tablets" ||
                                                     widget.category ==
                                                         "mobile phones"
-                                                ?
-                                                // widget.category == "smart watches" ?
-                                                condition1[e.value]
+                                                ? condition1[e.value]
                                                 : condition2[e.value];
                                           } else if (e.key.toString() ==
                                               "Registered") {
@@ -371,7 +285,10 @@ class _AddDetailsState extends State<AddDetails> {
                                             return partsType[e.value];
                                           } else if (e.key.toString() ==
                                               "Property Type") {
-                                            return widget.category == "land & plots" ? propType1[e.value] : propType2[e.value];
+                                            return widget.category ==
+                                                    "land & plots"
+                                                ? propType1[e.value]
+                                                : propType2[e.value];
                                           } else if (e.key.toString() ==
                                               "Area Unit") {
                                             return areaUnit[e.value];
@@ -389,21 +306,14 @@ class _AddDetailsState extends State<AddDetails> {
                                             return constState[e.value];
                                           } else if (e.key.toString() ==
                                               "Floor Level") {
-                                            return widget.category == "apartments & flats" ? floorLevel1[e.value] : floorLevel2[e.value];
+                                            return widget.category ==
+                                                    "apartments & flats"
+                                                ? floorLevel1[e.value]
+                                                : floorLevel2[e.value];
                                           } else {
                                             return e.value.toString();
                                           }
                                         })(),
-                                        // e.key.toString() == "Condition"
-                                        //     ? widget.category == "tablets" ||
-                                        //             widget.category ==
-                                        //                 "mobile phones"
-                                        //         ?
-                                        //         // widget.category == "smart watches" ?
-                                        //         condition1[e.value]
-                                        //         : condition2[e.value]
-                                        //     :  e.value.toString(),
-                                        // "New",
                                         style: const TextStyle(
                                             fontSize: 16.0,
                                             color:
@@ -422,8 +332,6 @@ class _AddDetailsState extends State<AddDetails> {
                         color: Color.fromRGBO(235, 238, 239, 1.0),
                         height: 20,
                         thickness: 1.8,
-                        // indent: 10,
-                        // endIndent: 60,
                       ),
                     ),
                     const Align(
@@ -462,8 +370,6 @@ class _AddDetailsState extends State<AddDetails> {
                         color: Color.fromRGBO(235, 238, 239, 1.0),
                         height: 20,
                         thickness: 1.8,
-                        // indent: 10,
-                        // endIndent: 60,
                       ),
                     ),
                     Stack(
@@ -487,8 +393,6 @@ class _AddDetailsState extends State<AddDetails> {
                                       borderRadius: BorderRadius.circular(50.0),
                                       child: Image.network(
                                         widget.photo_url.toString(),
-                                        // height: 350.0,
-                                        // width: 300.0,
                                       ),
                                     ),
                             ),
@@ -518,7 +422,7 @@ class _AddDetailsState extends State<AddDetails> {
                                       0.01),
                               child: const Text(
                                 "SEE PROFILE",
-                                style: const TextStyle(
+                                style: TextStyle(
                                     fontSize: 16.0,
                                     color: Color.fromRGBO(42, 91, 219, 1),
                                     fontWeight: FontWeight.w500),
@@ -545,8 +449,6 @@ class _AddDetailsState extends State<AddDetails> {
                         color: Color.fromRGBO(235, 238, 239, 1.0),
                         height: 20,
                         thickness: 1.8,
-                        // indent: 10,
-                        // endIndent: 60,
                       ),
                     ),
                   ],

@@ -23,13 +23,13 @@ class _Quickfilterstate extends State<Quickfilters> {
     }
     // loc.text = "Pakistan";
 
-    return MaterialApp(
-        home: Scaffold(
+    return Scaffold(
+      backgroundColor: Colors.white,
       appBar: PreferredSize(
           preferredSize: const Size.fromHeight(100),
           child: AppBar(
             systemOverlayStyle:
-                const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
+            const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
             elevation: 0,
             backgroundColor: Colors.white,
             leading: IconButton(
@@ -45,7 +45,7 @@ class _Quickfilterstate extends State<Quickfilters> {
             title: const Text(
               "Quick Filter",
               style:
-                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+              TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
             ),
             bottom: PreferredSize(
               preferredSize: const Size.fromHeight(39),
@@ -56,7 +56,7 @@ class _Quickfilterstate extends State<Quickfilters> {
                       Container(
                         margin: const EdgeInsets.only(left: 20),
                         child: SizedBox(
-                          width: resWidth,
+                          width: resWidth-10,
                           height: 40,
                           child: TextField(
                             // expands: true,
@@ -81,13 +81,13 @@ class _Quickfilterstate extends State<Quickfilters> {
                       ),
                       SizedBox(
                           height: 40,
-                          child: ElevatedButton(
+                          child: TextButton(
                               onPressed: () {
                                 loc.text = "";
                               },
-                              style: ButtonStyle(
-                                  backgroundColor: MaterialStateProperty.all(
-                                      const Color.fromRGBO(5, 51, 56, 1))),
+                              // style: ButtonStyle(
+                              //     backgroundColor: MaterialStateProperty.all(
+                              //         const Color.fromRGBO(5, 51, 56, 1))),
                               child: const Text("Cancel")))
                     ],
                   ),
@@ -99,6 +99,6 @@ class _Quickfilterstate extends State<Quickfilters> {
             ),
           )),
       body: null,
-    ));
+    );
   }
 }

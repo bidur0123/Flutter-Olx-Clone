@@ -20,11 +20,6 @@ class _ChatsState extends State<Chats> {
       child: MaterialApp(
         home: Scaffold(
           appBar: AppBar(
-            // leading: IconButton(
-            //   onPressed: (() => Navigator.pop(context)),
-            //   icon: const Icon(Icons.close,
-            //       color: Color.fromRGBO(5, 51, 56, 1)),
-            // ),
             backgroundColor: const Color.fromRGBO(255, 255, 255, 1.0),
             elevation: 0,
             title: const Text(

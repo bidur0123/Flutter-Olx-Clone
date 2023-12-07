@@ -1,8 +1,6 @@
-// ignore_for_file: avoid_print
 import 'dart:async';
 import 'dart:convert';
 
-// import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/foundation.dart';
@@ -11,7 +9,6 @@ import 'package:flutter/services.dart';
 import 'package:olx_clone/commons/actionbutton.dart';
 import 'package:olx_clone/commons/bottomnavbar.dart';
 import 'package:olx_clone/commons/custom_avatar.dart';
-import 'package:olx_clone/routes/account/account.dart';
 import 'package:olx_clone/routes/addDetails/details.dart';
 import 'package:olx_clone/routes/home/categories.dart';
 import 'package:olx_clone/routes/home/categoriesPage/Animals.dart';
@@ -67,7 +64,7 @@ class _HomePageState extends State<HomePage> {
   int _currentIndex = 0;
 
   // ignore: non_constant_identifier_names
-  String location_name = 'Pakistan';
+  String location_name = 'India';
   IconData favico = Icons.favorite_border_sharp;
 
   @override
@@ -78,20 +75,10 @@ class _HomePageState extends State<HomePage> {
       _myPage.animateTo(_myPage.position.maxScrollExtent,
           duration: const Duration(milliseconds: 500), curve: Curves.easeInOut);
     }
-    // if (_myPage.hasClients) {
-    //   _myPage.animateTo(_myPage.position.maxScrollExtent,
-    //     duration: const Duration(milliseconds: 500),
-    //     curve: Curves.easeInOut);
-    // }
 
     final colorScheme = Theme.of(context).colorScheme;
     final textTheme = Theme.of(context).textTheme;
     abc() async {
-      // String data = await DefaultAssetBundle.of(context)
-      //     .loadString("assets/example.json");
-      // final jsonResult = jsonDecode(data); //latest Dart
-      // // var jsonValue = json.decode(jsonResult['description']);
-      // print(jsonResult[0].toString().characters.map((e) => print(e)));
       final String response =
           await rootBundle.loadString('assets/example.json');
       final data = await json.decode(response);
@@ -101,8 +88,6 @@ class _HomePageState extends State<HomePage> {
       });
       print(_items[0]['id']);
     }
-
-    // abc();
 
     print("orientation = ${MediaQuery.of(context).orientation}");
     double resWidth = MediaQuery.of(context).size.width * 0.85;
@@ -355,12 +340,10 @@ class _HomePageState extends State<HomePage> {
                 decoration: const BoxDecoration(color: Colors.white),
                 child: Column(
                   children: [
-                    // SizedBox(width: MediaQuery.of(context).size.width * 1.0,),
                     SizedBox(
                       height: MediaQuery.of(context).size.height * 0.01,
                     ),
                     Stack(
-                      // mainAxisAlignment: MainAxisAlignment.start,
                       children: [
                         Padding(
                           padding: EdgeInsets.only(

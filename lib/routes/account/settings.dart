@@ -13,43 +13,45 @@ class Settings extends StatefulWidget {
 class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-            leading: IconButton(
-              onPressed: () {
-                Navigator.pop(context);
-              },
-              icon: const Icon(Icons.arrow_back_ios_new_rounded,
-                  size: 20, color: Color.fromRGBO(12, 56, 61, 1.0)),
-            ),
-            title: const Text(
-              "Settings",
-              style: TextStyle(
-                  color: Color.fromRGBO(12, 56, 61, 1.0),
-                  fontSize: 18,
-                  fontWeight: FontWeight.bold),
-            ),
-            elevation: 0,
-            backgroundColor: const Color.fromRGBO(250, 250, 250, 1)),
-        backgroundColor: Colors.white,
-        body: Column(children: [
+    return Scaffold(
+      appBar: AppBar(
+          leading: IconButton(
+            onPressed: () {
+              Navigator.pop(context);
+            },
+            icon: const Icon(Icons.arrow_back_ios_new_rounded,
+                size: 20, color: Color.fromRGBO(12, 56, 61, 1.0)),
+          ),
+          title: const Text(
+            "Settings",
+            style: TextStyle(
+                color: Color.fromRGBO(12, 56, 61, 1.0),
+                fontSize: 18,
+                fontWeight: FontWeight.bold),
+          ),
+          elevation: 0,
+          backgroundColor: const Color.fromRGBO(250, 250, 250, 1)),
+      backgroundColor: Colors.white,
+      body: Padding(
+        padding: const EdgeInsets.all(8.0),
+        child: Column(
+            children: [
           AccountRows(
               ontap: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const Privacy()));
               },
               heading: "Privacy",
-              sub_heading:
-                  "Phone number visibility"),
+              sub_heading: "Phone number visibility"),
           AccountRows(
               ontap: () {
-                Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const Notifications()));
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => const Notifications()));
               },
-
               heading: "Notifications",
-              sub_heading: "Recommendations and special communication"),
+              sub_heading: "Recommendations and others"),
           AccountRows(
               ontap: () {
                 // Navigator.push(
