@@ -11,17 +11,17 @@ class LocationSelect extends StatefulWidget {
 
 class _LocationSelectState extends State<LocationSelect> {
   var loc = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     double resWidth = MediaQuery.of(context).size.width * 0.755;
     if (MediaQuery.of(context).orientation == Orientation.portrait) {
       resWidth = MediaQuery.of(context).size.width * 0.755;
-    }
-     else if (MediaQuery.of(context).orientation == Orientation.landscape) {
+    } else if (MediaQuery.of(context).orientation == Orientation.landscape) {
       resWidth = MediaQuery.of(context).size.width * 0.855;
     }
     return Scaffold(
-      backgroundColor: Colors.white,
+        backgroundColor: Colors.white,
         appBar: PreferredSize(
             preferredSize: const Size.fromHeight(134),
             child: AppBar(
@@ -41,8 +41,8 @@ class _LocationSelectState extends State<LocationSelect> {
               ),
               title: const Text(
                 "Locations",
-                style: TextStyle(
-                    color: Colors.black, fontWeight: FontWeight.bold),
+                style:
+                    TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
               ),
               bottom: PreferredSize(
                 preferredSize: const Size.fromHeight(39),
@@ -53,7 +53,7 @@ class _LocationSelectState extends State<LocationSelect> {
                         Container(
                           margin: const EdgeInsets.only(left: 20),
                           child: SizedBox(
-                            width: resWidth-20,
+                            width: resWidth - 20,
                             child: TextField(
                               textAlignVertical: TextAlignVertical.center,
                               controller: loc,
@@ -98,8 +98,7 @@ class _LocationSelectState extends State<LocationSelect> {
                       child: Row(
                         children: [
                           Container(
-                            margin:
-                            const EdgeInsets.only(left: 20, bottom: 10),
+                            margin: const EdgeInsets.only(left: 20, bottom: 10),
                             child: const Align(
                               alignment: Alignment.bottomLeft,
                               child: Icon(
@@ -113,8 +112,7 @@ class _LocationSelectState extends State<LocationSelect> {
                               margin: const EdgeInsets.only(bottom: 10),
                               child: const Text("Use current location",
                                   style: TextStyle(
-                                      color:
-                                      Color.fromRGBO(58, 119, 255, 1),
+                                      color: Color.fromRGBO(58, 119, 255, 1),
                                       fontSize: 17))),
                         ],
                       ),
@@ -123,7 +121,6 @@ class _LocationSelectState extends State<LocationSelect> {
                 ),
               ),
             )),
-        body: null
-    );
+        body: null);
   }
 }

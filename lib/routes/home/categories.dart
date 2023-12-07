@@ -271,10 +271,9 @@ class _AllCatagoriesState extends State<AllCatagories> {
                     onTap: () {
                       print("kidea");
                       Navigator.push(
-                      context,
-                      MaterialPageRoute(
-                          builder: (context) => const Kids()),
-                    );
+                        context,
+                        MaterialPageRoute(builder: (context) => const Kids()),
+                      );
                     },
                     text: "Kids",
                     bgcolor: const Color.fromRGBO(155, 185, 225, 1.0),

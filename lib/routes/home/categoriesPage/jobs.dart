@@ -7,7 +7,7 @@ class Jobs extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-       return MaterialApp(
+    return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -42,102 +42,102 @@ class Jobs extends StatelessWidget {
                     txt: "See all in Jobs",
                     func: () {},
                     showico: false,
-                    color: Color.fromRGBO(82, 136, 255, 1.0)),
+                    color: const Color.fromRGBO(82, 136, 255, 1.0)),
                 CataTxt(
                   txt: "Online Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Marketing Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Advertising & PR Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Education Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Customer Services Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Sales Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "IT & Networking Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Hotels & Tourism Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Clerical & Administration Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Human Resources Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Accounting & Finance Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Manufacturing",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Medical Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Domestic Staff Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Part - Time Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Other Jobs",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
               ]))),
     ));

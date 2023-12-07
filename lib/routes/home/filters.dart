@@ -10,16 +10,15 @@ class Quickfilters extends StatefulWidget {
 
 class _Quickfilterstate extends State<Quickfilters> {
   var loc = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
     double resWidth = MediaQuery.of(context).size.width * 0.755;
-  // }
+    // }
     if (MediaQuery.of(context).orientation == Orientation.portrait) {
       resWidth = MediaQuery.of(context).size.width * 0.755;
-    }
-    else if (MediaQuery.of(context).orientation == Orientation.landscape) {
+    } else if (MediaQuery.of(context).orientation == Orientation.landscape) {
       resWidth = MediaQuery.of(context).size.width * 0.855;
-
     }
     // loc.text = "Pakistan";
 
@@ -29,7 +28,7 @@ class _Quickfilterstate extends State<Quickfilters> {
           preferredSize: const Size.fromHeight(100),
           child: AppBar(
             systemOverlayStyle:
-            const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
+                const SystemUiOverlayStyle(statusBarColor: Colors.transparent),
             elevation: 0,
             backgroundColor: Colors.white,
             leading: IconButton(
@@ -45,7 +44,7 @@ class _Quickfilterstate extends State<Quickfilters> {
             title: const Text(
               "Quick Filter",
               style:
-              TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
+                  TextStyle(color: Colors.black, fontWeight: FontWeight.bold),
             ),
             bottom: PreferredSize(
               preferredSize: const Size.fromHeight(39),
@@ -56,19 +55,15 @@ class _Quickfilterstate extends State<Quickfilters> {
                       Container(
                         margin: const EdgeInsets.only(left: 20),
                         child: SizedBox(
-                          width: resWidth-10,
+                          width: resWidth - 10,
                           height: 40,
                           child: TextField(
-                            // expands: true,
-                            // minLines: 2,
-                            // maxLines: 2,
                             textAlignVertical: TextAlignVertical.center,
                             controller: loc,
                             decoration: const InputDecoration(
                               contentPadding: EdgeInsets.all(5),
                               prefixIcon: Icon(Icons.search),
-                              hoverColor: Colors.amberAccent
-                              ,
+                              hoverColor: Colors.amberAccent,
                               border: OutlineInputBorder(),
                               hintStyle: TextStyle(color: Colors.black),
                               hintText: 'Find cars, mobiles, phones and more',
@@ -85,9 +80,6 @@ class _Quickfilterstate extends State<Quickfilters> {
                               onPressed: () {
                                 loc.text = "";
                               },
-                              // style: ButtonStyle(
-                              //     backgroundColor: MaterialStateProperty.all(
-                              //         const Color.fromRGBO(5, 51, 56, 1))),
                               child: const Text("Cancel")))
                     ],
                   ),

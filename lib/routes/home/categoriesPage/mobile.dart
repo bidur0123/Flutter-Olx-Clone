@@ -5,7 +5,6 @@ import 'package:flutter/material.dart';
 import 'package:olx_clone/commons/custom_text.dart';
 
 class Mobiles extends StatefulWidget {
-
   const Mobiles({Key? key}) : super(key: key);
 
   @override
@@ -50,12 +49,12 @@ class _MobilesState extends State<Mobiles> {
                     txt: "See all in Mobiles",
                     func: () {},
                     showico: false,
-                    color: Color.fromRGBO(82, 136, 255, 1.0)),
+                    color: const Color.fromRGBO(82, 136, 255, 1.0)),
                 CataTxt(
                   txt: "Tablets",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Accessories",
@@ -67,32 +66,20 @@ class _MobilesState extends State<Mobiles> {
                     );
                   },
                   showico: true,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Mobile Phones",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Smart Watches",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
-                // Padding(
-                //   padding: EdgeInsets.only(
-                //       left: MediaQuery.of(context).size.width * 0.06),
-                //   child: const Text(
-                //     "Tablets",
-                //     style: TextStyle(
-                //         color: Color.fromRGBO(5, 51, 56, 1),
-                //         fontWeight: FontWeight.w500,
-                //         fontSize: 16,
-                //         ),
-                //   ),
-                // ),
               ]))),
     ));
   }
@@ -138,12 +125,12 @@ class Accessories extends StatelessWidget {
                     txt: "See all in Accessories",
                     func: () {},
                     showico: false,
-                    color: Color.fromRGBO(82, 136, 255, 1.0)),
+                    color: const Color.fromRGBO(82, 136, 255, 1.0)),
                 CataTxt(
                   txt: "Charging Cables",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                     txt: "See all in Mobiles",
@@ -154,85 +141,85 @@ class Accessories extends StatelessWidget {
                   txt: "Tablets",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Converters",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Chargers",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Screens",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Screen Protectors",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Mobile Stands",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Ring Lights",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Selfie Sticks",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Power Banks",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Headphones",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Earphones",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Covers & Cases",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Externel Memory",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Other Accessories",
                   func: () {},
                   showico: false,
-                  color: Color.fromRGBO(5, 51, 56, 1),
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
               ]))),
     ));

@@ -36,7 +36,6 @@ class _SellingState extends State<Selling> {
             "Find something you like and start a conversation!",
             style: TextStyle(
                 fontSize: 13,
-                // fontWeight: FontWeight.w800,
                 color: Color.fromRGBO(5, 51, 56, 1)),
           ),
           const SizedBox(
