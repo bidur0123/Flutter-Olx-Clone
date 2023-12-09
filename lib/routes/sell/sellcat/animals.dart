@@ -7,7 +7,7 @@ class Animals extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        return MaterialApp(
+    return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -21,7 +21,6 @@ class Animals extends StatelessWidget {
           "Animals",
           style: TextStyle(
               fontSize: 18,
-
               fontWeight: FontWeight.w600,
               color: Color.fromRGBO(5, 51, 56, 1)),
         ),
@@ -43,49 +42,57 @@ class Animals extends StatelessWidget {
                   txt: "Fish & Aquariumns",
                   category: "fish & aquariumns",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Birds",
                   category: "birds",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Hens & Aquariums",
                   category: "hens & aquariums",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Cats",
                   category: "cats",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Dogs",
                   category: "dogs",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Livestock",
                   category: "livestock",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Horses",
                   category: "horses",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Pet Food & Accessories",
                   category: "pet food & accessories",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
               ]))),
     ));

@@ -7,7 +7,7 @@ class Books extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        return MaterialApp(
+    return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -21,7 +21,6 @@ class Books extends StatelessWidget {
           "Books, Sports & Hobbies",
           style: TextStyle(
               fontSize: 18,
-
               fontWeight: FontWeight.w600,
               color: Color.fromRGBO(5, 51, 56, 1)),
         ),
@@ -43,31 +42,36 @@ class Books extends StatelessWidget {
                   txt: "Books & Magazines",
                   category: "books & magazines",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Musical Instruments",
                   category: "musical instruments",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Sports Equipment",
                   category: "sports equipment",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Gym & Fitness",
                   category: "gym & fitness",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Other Hobbies",
                   category: "other hobbies",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
               ]))),
     ));
