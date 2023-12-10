@@ -77,11 +77,6 @@ class _LocationSelectState extends State<LocationSelect> {
                                 onPressed: () {
                                   loc.text = "";
                                 },
-                                // style: ButtonStyle(
-                                //     backgroundColor:
-                                //         MaterialStateProperty.all(
-                                //             const Color.fromRGBO(
-                                //                 5, 61, 56, 1))),
                                 child: const Text("Cancel")))
                       ],
                     ),

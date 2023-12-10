@@ -14,13 +14,11 @@ class _Quickfilterstate extends State<Quickfilters> {
   @override
   Widget build(BuildContext context) {
     double resWidth = MediaQuery.of(context).size.width * 0.755;
-    // }
     if (MediaQuery.of(context).orientation == Orientation.portrait) {
       resWidth = MediaQuery.of(context).size.width * 0.755;
     } else if (MediaQuery.of(context).orientation == Orientation.landscape) {
       resWidth = MediaQuery.of(context).size.width * 0.855;
     }
-    // loc.text = "Pakistan";
 
     return Scaffold(
       backgroundColor: Colors.white,

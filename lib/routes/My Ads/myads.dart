@@ -19,14 +19,7 @@ class _MyAdsState extends State<MyAds> {
         length: 2,
         child: Scaffold(
           appBar: AppBar(
-            // leading: IconButton(
-            //   onPressed: () {
-            //     Navigator.pop(context);
-            //   },
-            //   icon: Icon(Icons.arrow_back_ios_new_rounded,
-            //       size: 20, color: Color.fromRGBO(12, 56, 61, 1.0)),
-            // ),
-            title: Text(
+            title: const Text(
               "My Ads",
               style: TextStyle(
                   color: Color.fromRGBO(12, 56, 61, 1.0),
@@ -34,8 +27,8 @@ class _MyAdsState extends State<MyAds> {
                   fontWeight: FontWeight.bold),
             ),
             elevation: 0,
-            backgroundColor: Color.fromRGBO(255, 255, 255, 1.0),
-            bottom: TabBar(
+            backgroundColor: const Color.fromRGBO(255, 255, 255, 1.0),
+            bottom: const TabBar(
               labelColor: Color.fromRGBO(12, 56, 61, 1.0),
               labelStyle: TextStyle(fontWeight: FontWeight.bold),
               tabs: [
@@ -46,11 +39,11 @@ class _MyAdsState extends State<MyAds> {
               ],
             ),
           ),
-          backgroundColor: Color.fromRGBO(255, 255, 255, 1.0),
-          body: TabBarView(children: [Ads(), Favourites()]),
-          bottomNavigationBar: BottomNavigation(),
+          backgroundColor: const Color.fromRGBO(255, 255, 255, 1.0),
+          body: const TabBarView(children: [Ads(), Favourites()]),
+          bottomNavigationBar: const BottomNavigation(),
         floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-        floatingActionButton: FloatingActionBtn(),
+        floatingActionButton: const FloatingActionBtn(),
         ),
       ),
     );

@@ -135,14 +135,9 @@ class _HomePageState extends State<HomePage> {
                           children: [
                             Image.asset(
                               "assets/images/olx_logo_blue.png",
-                              // fit: BoxFit.fitWidth,
                               width: 33,
                             ),
-                            // const SizedBox(
-                            //   width: 74,
-                            // ),
                             Align(
-                              // alignment: Alignment.center,
                               alignment: Alignment.center,
                               child: InkWell(
                                 onTap: () {
@@ -242,9 +237,7 @@ class _HomePageState extends State<HomePage> {
                                           fontWeight: FontWeight.w500,
                                           fontSize: 16),
                                     )),
-                                // alignment: Alignment.bottomRight,
                                 const Spacer(),
-                                // alignment: Alignment.center ,
                                 IconButton(
                                   onPressed: () {},
                                   icon: const Icon(
@@ -277,14 +270,8 @@ class _HomePageState extends State<HomePage> {
                                     },
                                     child: const IgnorePointer(
                                       child: TextField(
-                                        // style: TextStyle(backgroundColor: Colors.amber),
-                                        // readOnly: true,
-                                        // expands: true,
-                                        // minLines: 2,
-                                        // maxLines: 2,
                                         textAlignVertical:
                                             TextAlignVertical.center,
-                                        // controller: loc,
                                         decoration: InputDecoration(
                                           border: InputBorder.none,
                                           fillColor: Colors.white,
@@ -292,7 +279,6 @@ class _HomePageState extends State<HomePage> {
                                           contentPadding: EdgeInsets.all(1),
                                           prefixIcon: Icon(Icons.search),
                                           hoverColor: Colors.amberAccent,
-                                          // border:
                                           hintStyle:
                                               TextStyle(color: Colors.black),
                                           hintText:
@@ -1136,7 +1122,6 @@ class _HomePageState extends State<HomePage> {
                                                     bottom: 8.0),
                                                 child: Text(
                                                   "Rs: ${snapshot.data!.docs[index]['data']['price'].toString()}",
-                                                  // "Rs: ",
                                                   maxLines: 2,
                                                   overflow:
                                                       TextOverflow.ellipsis,
