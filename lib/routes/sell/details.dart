@@ -101,15 +101,15 @@ class _IncludeDetailsState extends State<IncludeDetails> {
         widget.category == "atv & quads" ||
         widget.category == "scooty & scooters") {
       return BikesDetails(category: widget.category);
-    } else if (widget.category == "bussiness for sale" ||
-        widget.category == "food & resturants" ||
+    } else if (widget.category == "business for sale" ||
+        widget.category == "food & restaurants" ||
         widget.category == "trade & industrial" ||
         widget.category == "construction & heavy machinery" ||
         widget.category == "agriculture" ||
-        widget.category == "other bussiness & industry" ||
+        widget.category == "other business & industry" ||
         widget.category == "medical & pharma") {
       return BussinessDetails(category: widget.category);
-    } else if (widget.category == "tuitions & academies" ||
+    } else if (widget.category == "tuitions & academics" ||
         widget.category == "travel & visa" ||
         widget.category == "car rental" ||
         widget.category == "maids" ||
@@ -202,7 +202,7 @@ class _IncludeDetailsState extends State<IncludeDetails> {
         widget.category == "kids accessories") {
       return KidsDetails(category: widget.category);
     } else {
-      return Text("no category selected");
+      return const Text("no category selected");
     }
   }
 }
