@@ -7,7 +7,7 @@ class Kids extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        return MaterialApp(
+    return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -21,7 +21,6 @@ class Kids extends StatelessWidget {
           "Kids",
           style: TextStyle(
               fontSize: 18,
-
               fontWeight: FontWeight.w600,
               color: Color.fromRGBO(5, 51, 56, 1)),
         ),
@@ -43,37 +42,43 @@ class Kids extends StatelessWidget {
                   txt: "Kids Furniture",
                   category: "kids furniture",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Toys",
                   category: "toys",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Prams & Walkers",
                   category: "prams & walkers",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Swings & Slides",
                   category: "swings & slides",
-                  func: () {}, 
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  func: () {},
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Kids Bikes",
                   category: "kids bikes",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Kids Accessories",
                   category: "kids accessories",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
               ]))),
     ));
