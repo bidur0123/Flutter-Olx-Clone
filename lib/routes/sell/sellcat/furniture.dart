@@ -7,7 +7,7 @@ class Furniture extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        return MaterialApp(
+    return MaterialApp(
         home: Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -42,61 +42,71 @@ class Furniture extends StatelessWidget {
                   txt: "Sofa & Chairs",
                   category: "sofa & chairs",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Beds & Wardrobes",
                   category: "beds & wardrobes",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Home Decoration",
                   category: "home decoration",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Tables & Dining",
                   category: "tables & dining",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Garden & Outdoor",
                   category: "garden & outdoor",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Painting & Mirrors",
                   category: "painting & mirrors",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Rugs & Carpets",
                   category: "rugs & carpets",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Curtains & Blinds",
                   category: "curtains & blinds",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Office Furniture",
                   category: "office furniture",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
                 CataTxt(
                   txt: "Other Household Items",
                   category: "other household items",
                   func: () {},
-                  showico: false, color: Color.fromRGBO(5, 51, 56, 1),
+                  showico: false,
+                  color: const Color.fromRGBO(5, 51, 56, 1),
                 ),
               ]))),
     ));
