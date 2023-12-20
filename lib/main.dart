@@ -7,17 +7,6 @@ import 'dart:io';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  // if (Platform.isWindows) {
-  //   Firebase.initializeApp(
-  //       options: const FirebaseOptions(
-  //           apiKey: 'AIzaSyCpG_baxBgjaAdBdGFb7vPGRBuT5L8FqFY',
-  //           appId: '',
-  //           messagingSenderId: '774007259454	',
-  //           projectId: 'olx-clone-8d598'));
-  // } else
-  //   await Firebase.initializeApp(
-  //     options: DefaultFirebaseOptions.currentPlatform,
-  //   );
   await Firebase.initializeApp();
 
   runApp(const MyApp());
