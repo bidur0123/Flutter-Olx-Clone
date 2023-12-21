@@ -50,8 +50,8 @@ class _AnimalDetailsState extends State<AnimalDetails> {
                           const SizedBox(
                             height: 10,
                           ),
-                          Row(
-                            children: const [
+                          const Row(
+                            children: [
                               SizedBox(
                                 width: 5,
                               ),
