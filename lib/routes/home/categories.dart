@@ -72,7 +72,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                   icon: Icons.phone_android_outlined,
                   onTap: () {
-                    print("androidea phonea");
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => const Mobiles()),
@@ -86,7 +85,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                   icon: CupertinoIcons.car,
                   onTap: () {
-                    print("vehiclea");
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => const Vehicles()),
@@ -100,7 +98,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                   icon: Icons.point_of_sale,
                   onTap: () {
-                    print("propertea salea");
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -115,7 +112,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                   icon: Icons.point_of_sale,
                   onTap: () {
-                    print("propertea rentelea");
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -144,7 +140,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                   icon: Icons.desktop_windows,
                   onTap: () {
-                    print("electrea & homea");
                     Navigator.push(
                       context,
                       MaterialPageRoute(
@@ -159,7 +154,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                   icon: Icons.electric_bike,
                   onTap: () {
-                    print("bikea");
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => const Bikes()),
@@ -173,7 +167,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                   icon: Icons.business_sharp,
                   onTap: () {
-                    print("busea, industrea, Agriea");
                     Navigator.push(
                       context,
                       MaterialPageRoute(builder: (context) => const Business()),
@@ -187,7 +180,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                     icon: Icons.room_service_sharp,
                     onTap: () {
-                      print("Servea");
                       Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -201,7 +193,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                     icon: Icons.badge,
                     onTap: () {
-                      print("Jobea");
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => const Jobs()),
@@ -214,7 +205,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                     icon: CommunityMaterialIcons.baby_face_outline,
                     onTap: () {
-                      print("Animalea");
                       Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -228,7 +218,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                     icon: CommunityMaterialIcons.sofa,
                     onTap: () {
-                      print("Furnea");
                       Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -242,7 +231,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                     icon: FontAwesomeIcons.shirt,
                     onTap: () {
-                      print("Fashea");
                       Navigator.push(
                         context,
                         MaterialPageRoute(
@@ -256,7 +244,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                     icon: CommunityMaterialIcons.guitar_acoustic,
                     onTap: () {
-                      print("bookea");
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => const Books()),
@@ -269,7 +256,6 @@ class _AllCatagoriesState extends State<AllCatagories> {
                 AllCategoriesCircleAvatar(
                     icon: CommunityMaterialIcons.baby_bottle,
                     onTap: () {
-                      print("kidea");
                       Navigator.push(
                         context,
                         MaterialPageRoute(builder: (context) => const Kids()),
