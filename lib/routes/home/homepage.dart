@@ -89,7 +89,6 @@ class _HomePageState extends State<HomePage> {
       print(_items[0]['id']);
     }
 
-    print("orientation = ${MediaQuery.of(context).orientation}");
     double resWidth = MediaQuery.of(context).size.width * 0.85;
     final double fillPercent = 56.23; // fills 56.23% for container from bottom
     final double fillStop = (100 - fillPercent) / 100;
